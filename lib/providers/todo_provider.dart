@@ -1,10 +1,7 @@
-// 1. download the provider package through the termial using the command:
-// flutter pub get provider
 
-//2. create a new class for our provider that extends from ChangeNotifier
-// third step in main.dart
 import 'package:flutter/material.dart';
-import 'package:todo_app/models/todo.dart';
+
+import 'package:todo_provider_app/models/todos.dart';
 
 class TodoProvider extends ChangeNotifier {
   List<Todo> todos = [];
@@ -21,7 +18,7 @@ class TodoProvider extends ChangeNotifier {
   }
 
   void todoChecked(int id) {
-    // var checked = todos[todos.indexwhere(element) => elemnt.id]),  checked.done != checked.done]
+    
 
     todos[id - 1].done = !todos[id - 1].done;
     notifyListeners();

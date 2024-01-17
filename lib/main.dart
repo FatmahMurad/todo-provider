@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:provider/provider.dart';
-import 'package:todo_app/pages/add_page.dart';
-import 'package:todo_app/pages/home_page.dart';
-import 'package:todo_app/providers/todo_provider.dart';
+import 'package:todo_provider_app/pages/add_page.dart';
+import 'package:todo_provider_app/pages/home_page.dart';
+
+import 'package:todo_provider_app/providers/todo_provider.dart';
 
 void main() {
-  // 3. Add your provider here using ChangeNotifierProvider Widget
   runApp(
     ChangeNotifierProvider(
       create: (context) => TodoProvider(),
